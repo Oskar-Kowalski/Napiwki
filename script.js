@@ -23,3 +23,11 @@ function calculateTip(event) {
     2
   )}, całkowita kwota: ${calkwota.toFixed(2)} `;
 }
+
+const wartosc = document.getElementById("wartosc");
+wartosc.textContent = `Podaj procent napiwku: ${napiwek.value}%`;
+
+napiwek.addEventListener("input", (event) => {
+    wartosc.textContent = `Podaj procent napiwku: ${event.target.value}%`;
+});
+
